@@ -1,0 +1,42 @@
+/* Define default light theme colors */
+:root {
+  --background-color: #fff; /* Light mode background */
+  --text-color: #000;       /* Light mode text */
+  --link-color: #0000ff;    /* Light mode link color */
+  --footer-background-color: #f2f2f2; /* Specific to footer */
+  --header-background-color: #e8e8e8; /* Specific to header */
+}
+
+/* Apply default theme colors universally */
+body, div, nav, header, footer, section, article, aside, p, h1, h2, h3, h4, h5, h6, a, button, input, select, textarea {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a, button {
+  color: var(--link-color);
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+}
+
+/* Dark theme modifications */
+.dark-mode {
+  --background-color: #333; /* Dark mode background */
+  --text-color: #ccc;       /* Dark mode text */
+  --link-color: #5599ff;    /* Dark mode link color */
+  --footer-background-color: #1a1a1a; /* Dark mode footer */
+  --header-background-color: #242424; /* Dark mode header */
+}
+
+/* Specific section adjustments for dark mode */
+.dark-mode .banner, .dark-mode .wrapper.style1, .dark-mode .wrapper.style2, .dark-mode .carousel, .dark-mode .footer, .dark-mode .col-4, .dark-mode .col-12-mobile, .dark-mode .icon.solid.fa-file.circled, .dark-mode .contact, .dark-mode .nav, .dark-mode .inner, .dark-mode .header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
